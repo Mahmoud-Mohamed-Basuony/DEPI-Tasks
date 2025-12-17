@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Semantic HTML Only</title>
+</head>
+<body>
+
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Corporate Dashboard</h1>
+        <section>
+            <form role="search">
+                <label for="dashboard-search">Search Data:</label>
+                <input type="search" id="dashboard-search" name="q" placeholder="Search transactions, users...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </header>
+
+    <div style="display: flex;"> <nav aria-label="Main Navigation">
+            <section>
+                <h3>General</h3>
+                <ul>
+                    <li><a href="#">Dashboard Home</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Administration</h3>
+                <ul>
+                    <li><a href="#">User Management</a></li>
+                    <li><a href="#">System Settings</a></li>
+                    <li><a href="#">Security Logs</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <main id="main-content">
+            <section>
+                <h2>Performance Overview</h2>
+                <div class="card-container">
+                    <article>
+                        <h3>Total Revenue</h3>
+                        <p>$12,450.00</p>
+                        <footer><small>+5% from last month</small></footer>
+                    </article>
+
+                    <article>
+                        <h3>New Signups</h3>
+                        <p>342 Users</p>
+                        <footer><small>Total: 10,200</small></footer>
+                    </article>
+
+                    <article>
+                        <h3>Server Uptime</h3>
+                        <p>99.9%</p>
+                        <footer><small>Status: Healthy</small></footer>
+                    </article>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Latest Transactions</h2>
+                <table border="1">
+                    <caption>Recent Financial Activity</caption>
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#TRX-9901</td>
+                            <td>John Doe</td>
+                            <td>Dec 15, 2025</td>
+                            <td>$150.00</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>#TRX-9902</td>
+                            <td>Jane Smith</td>
+                            <td>Dec 17, 2025</td>
+                            <td>$2,100.00</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Notifications</h2>
+            <ul>
+                <li>
+                    <strong>System Update:</strong> 
+                    <p>New security patch applied successfully at 02:00 AM.</p>
+                </li>
+                <li>
+                    <strong>New Feedback:</strong> 
+                    <p>A customer left a 5-star review on Product X.</p>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AdminPanel Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
